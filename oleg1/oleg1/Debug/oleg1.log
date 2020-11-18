@@ -1,0 +1,30 @@
+﻿  olegcod.cpp
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(54,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : см. объявление "scanf"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(88,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : см. объявление "scanf"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(94,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : см. объявление "scanf"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(134,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(135,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(136,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(139,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(140,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(141,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(144,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(145,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(146,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(154,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : см. объявление "scanf"
+D:\Рабочие папки\ALEX\Практика\логика\oleg1\oleg1\olegcod.cpp(168,1): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Program Files\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453): message : см. объявление "getch"
+  oleg1.vcxproj -> D:\Рабочие папки\ALEX\Практика\логика\oleg1\Debug\oleg1.exe
