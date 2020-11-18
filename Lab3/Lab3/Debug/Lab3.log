@@ -1,0 +1,76 @@
+﻿  adjacency_lists.cpp
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(41,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(55,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(58,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(120,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(129,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(133,25): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(157,25): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(184,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(196,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(201,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(203,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(217,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(220,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(222,16): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(235,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(252,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(255,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(300,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(314,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(322,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(326,26): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(350,27): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(377,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(388,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(393,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(395,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(410,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(413,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(419,17): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(433,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(450,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(453,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(488,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(499,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(515,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(522,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(525,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(547,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(562,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(589,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(592,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(605,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(620,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(646,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(652,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(669,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(672,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(687,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(702,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(733,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(739,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(756,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(762,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(778,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(793,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(822,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\adjacency_lists.cpp(825,22): warning C4018: <: несоответствие типов со знаком и без знака
+  main.cpp
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(60,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(84,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(69,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(141,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(169,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(270,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(396,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(427,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\main.cpp(477,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  Zad4.cpp
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\Zad4.cpp(51,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\Zad4.cpp(23,8): warning C4101: m: неиспользованная локальная переменная
+D:\пгу\Практика\logics\logicsnoway\Lab3\Lab3\Zad4.cpp(23,14): warning C4101: m2: неиспользованная локальная переменная
+  Создание кода...
+adjacency_lists.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/INCREMENTAL:NO"
+  Lab3.vcxproj -> D:\пгу\Практика\logics\logicsnoway\Lab3\Debug\Lab3.exe
