@@ -1,0 +1,8 @@
+﻿  logic2.cpp
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(35,7): warning C4101: items: неиспользованная локальная переменная
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(155,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(168,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(294,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(308,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\logic2\logic2.cpp(324,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  logic2.vcxproj -> D:\Рабочие папки\ALEX\Практика\logics\logictiverpo\logic2\Debug\logic2.exe
