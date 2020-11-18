@@ -1,0 +1,89 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+#include <locale.h>
+#include <iostream>
+using namespace std;
+void zad1();
+void zad2(int st, int N);
+
+#define INFTY INT_MAX
+int** M1, *nodes;
+int N;
+
+void main() {
+
+	zad1();
+	
+	
+	for (int i = 0; i < 7; i++) // исходно все вершины равны 0
+		nodes[i] = 0;
+	printf(" \n");
+	int st;
+	printf("\nВыберите вершину для работы\n");
+	scanf("%d", &st);
+	st--;
+	zad2(st, N);
+	cin.get();
+
+
+	
+}
+
+void zad1() {
+
+	setlocale(LC_ALL, "russian");
+
+	printf("\n Укажите размер матрицы N*N: ");
+	scanf("%d", &N);
+
+	M1 = (int**)malloc(N * sizeof(int *));
+	for (int i = 0; i < N; i++)
+	{
+		M1[i] = (int*)malloc(N * sizeof(int));
+	}
+	nodes = (int*)malloc(N * sizeof(int));
+
+	srand(time(NULL));
+	for (int i = 0; i < N; i++) // генерация матрицы M1
+	{
+		M1[i][i] = 0;
+
+		for (int j = i + 1; j < N; j++)
+		{
+
+			M1[i][j] = rand() % 2;
+			M1[j][i] = M1[i][j];
+
+
+		}
+	}
+
+	printf("\n 1. Вывод сгенерированных матриц смежности неореентированных графов\n ");
+
+	for (int i = 0; i < N; i++) { // вывод матриц смежности
+
+		printf("\n ");
+
+		for (int j = 0; j < N; j++) {
+			printf("%d", M1[i][j]);
+		}
+
+
+	}
+
+	printf("\n ");
+
+	_getch();
+}
+void zad2(int st, int N)
+{
+	int r;
+	printf("%d ", st+1);
+	nodes[st] = 1;
+	for (r = 0; r < N; r++)
+		if ((M1[st][r] != 0) && (nodes[r] == 0))
+			zad2(r, N);
+}

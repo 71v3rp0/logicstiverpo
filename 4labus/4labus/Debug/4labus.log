@@ -1,0 +1,6 @@
+﻿  kek.cpp
+D:\пгу\Практика\logics\logicsnoway\4labus\4labus\kek.cpp(37,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\пгу\Практика\logics\logicsnoway\4labus\4labus\kek.cpp(87,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicsnoway\4labus\4labus\kek.cpp(133,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\4labus\4labus\kek.cpp(136,21): warning C4018: <: несоответствие типов со знаком и без знака
+  4labus.vcxproj -> D:\пгу\Практика\logics\logicsnoway\4labus\Debug\4labus.exe
