@@ -1,0 +1,6 @@
+﻿  che5.cpp
+D:\пгу\Практика\logics\logicsnoway\logic5\logic5\che5.cpp(95,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\пгу\Практика\logics\logicsnoway\logic5\logic5\che5.cpp(154,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicsnoway\logic5\logic5\che5.cpp(200,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\пгу\Практика\logics\logicsnoway\logic5\logic5\che5.cpp(203,21): warning C4018: <: несоответствие типов со знаком и без знака
+  logic5.vcxproj -> D:\пгу\Практика\logics\logicsnoway\logic5\Debug\logic5.exe
