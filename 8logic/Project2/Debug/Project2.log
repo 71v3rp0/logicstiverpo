@@ -1,5 +1,5 @@
 ﻿  7log.cpp
-D:\пгу\Практика\logics\7logic\Project2\7log.cpp(34,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-D:\пгу\Практика\logics\7logic\Project2\7log.cpp(111,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\пгу\Практика\logics\7logic\Project2\7log.cpp(194,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project2.vcxproj -> D:\пгу\Практика\logics\7logic\Debug\Project2.exe
+D:\пгу\Практика\logics\logicstiverpo\8logic\Project2\7log.cpp(34,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\пгу\Практика\logics\logicstiverpo\8logic\Project2\7log.cpp(115,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicstiverpo\8logic\Project2\7log.cpp(198,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Project2.vcxproj -> D:\пгу\Практика\logics\logicstiverpo\8logic\Debug\Project2.exe

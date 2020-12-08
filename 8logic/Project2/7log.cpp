@@ -21,7 +21,7 @@ void zad1_5(int st);
 void zad1_nevzv();
 
 #define INFTY INT_MAX
-int** M1, ** M2, * nodes, * ex, *dom, *kon;
+int** M1, ** M2, * nodes, * ex, * dom, * kon;
 int N;
 
 
@@ -36,7 +36,7 @@ void main(int argc, char* argv[])
 	int naprav = 0, ves = 0;
 
 	setlocale(LC_CTYPE, "rus");
-	/*
+
 	if (argc == 1)
 	{
 		printf("\n Введите аргументы Lab7.exe <направленность> <вес>\n\n");
@@ -46,10 +46,6 @@ void main(int argc, char* argv[])
 
 		_Exit(EXIT_SUCCESS);
 	}
-	*/
-	ves = 1;
-	naprav = 0;
-	int inc = 0;
 	for (int i = 0; i < argc; ++i)
 	{
 		if (strcmp(argv[i], "dir") == 0) // dir dis
@@ -67,14 +63,19 @@ void main(int argc, char* argv[])
 	if (naprav == 1)
 	{
 		zad1_3(st); // ориентированный граф
+		printf("\n\n");
 		zad1_5(st);
 	}
 	else
 	{
-		zad1_2(st); // неориентированный граф
-		zad1_4(st);
+		for (int i = 0; i < N; i++)
+			for (int j = 0; j < N; j++)
+				M2[i][j] = M1[i][j];
+		zad1_3(st); // ориентированный граф
+		printf("\n\n");
+		zad1_5(st);
 	}
-	
+
 
 	std::cout << '\n';
 
@@ -104,8 +105,8 @@ void zad1()
 	for (int i = 0; i < N; i++)
 	{
 		ex[i] = -1;
-			dom[i] = -1;
-			kon[i] = -1;
+		dom[i] = -1;
+		kon[i] = -1;
 	}
 
 	srand(time(NULL));
@@ -239,164 +240,6 @@ void zad1_nevzv()
 }
 
 
-void zad1_2(int st)
-{
-	int r, i = 0;
-
-	///// вывод матрицы смежности
-	printf("    ");
-	for (int i = 0; i < N; i++)
-		printf("[%d] ", i + 1);
-
-	for (int i = 0; i < N; i++)
-	{
-		printf("\n[%d]", i + 1);
-
-		for (int j = 0; j < N; j++)
-		{
-			if ((i + 1) < 10)
-			{
-				if (j < 10)
-					printf("%3d ", M1[i][j]);
-				else
-					printf(" %3d ", M1[i][j]);
-
-			}
-
-			else if ((i + 1) < 100)
-			{
-				if (j == 0)
-					printf(" %d", M1[i][j]);
-				else if (j < 10)
-					printf("   %d", M1[i][j]);
-				else
-					printf("    %d", M1[i][j]);
-
-			}
-
-		}
-
-	}
-	/////
-	int sch2 = 0;
-	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности неориентированного графа для каждой из вершин");
-	for (int j = 0; j < N; j++)
-	{
-		sch2 = 0;
-		printf("\n ");
-		
-		for (int i = 0; i < N; i++) // исходно все вершины равны 10000
-			nodes[i] = 10000;
-
-		st = j;
-		Q.push(st);
-		int nach = st;
-
-		nodes[st] = 0;
-
-		while (!Q.empty())
-		{
-			st = Q.front();
-			Q.pop();
-
-			for (r = 0; r < N; r++)
-				if ((M1[st][r] != 0) && (nodes[r] > nodes[st] + M1[st][r])) // ребро существует и вершина не посещена
-				{
-					Q.push(r);
-					nodes[r] = nodes[st] + M1[st][r];
-				}
-		}
-		for (int i = 0; i < N; i++)
-		{
-			if (nodes[i] != 10000)
-			{
-				printf("%d ", nodes[i]);
-				sch2++;
-			}
-			else
-			{
-				nodes[i] = 0;
-				printf("0 ");
-			}
-			if (nodes[i] > ex[nach])
-			{
-				ex[nach] = nodes[i];
-			}
-		}
-		if (sch2 == N)
-			dom[j] = j;
-		if (sch2 == 2)
-			kon[j] = j;
-	}
-	
-	/// ///
-
-	int rad = 10000;
-	int dia = 0;
-	for (int i = 0; i < N; i++)
-		if (ex[i] == 10000)
-			ex[i] = 0;
-	printf("\nЭксцентриситеты: \n");
-	for (int i = 0; i < N; i++)
-	{
-		printf("%d ", ex[i]);
-		if (ex[i] > dia)
-			dia = ex[i];
-		if ((ex[i] < rad) && (ex[i] != 0))
-			rad = ex[i];
-	}
-	if (rad == 10000)
-		rad = 0;
-	int sch1 = 0;
-	printf("\nРадиус - %d, диаметр - %d\n", rad, dia);
-	printf("Центральные вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (ex[i] == rad)
-		{
-			printf("%d ", i+1);
-			sch1++;
-		}
-	}
-	if (sch1 == 0)
-		printf(" отсутствуют");
-	sch1 = 0;
-	printf("\nПерифирийные вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (ex[i] == dia)
-			printf("%d ", i+1);
-	}
-	printf("\nИзолированные вершины: \n");
-	
-	for (int i = 0; i < N; i++)
-	{
-		if (ex[i] == 0)
-		{
-			printf("%d ", i+1);
-			sch1++;
-		}
-	}
-	if (sch1 == 0)
-		printf("отсутствуют");
-	printf("\nДоминирующие вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (dom[i] != -1)
-		{
-			printf("%d ", i+1);
-		}
-	}
-	printf("\nКонцевые вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (kon[i] != -1)
-		{
-			printf("%d ", i+1);
-		}
-	}
-}
-
 
 void zad1_3(int st)
 {
@@ -405,11 +248,11 @@ void zad1_3(int st)
 	///// вывод матрицы смежности
 	printf("    ");
 	for (int i = 0; i < N; i++)
-		printf("[%d] ", i + 1);
+		printf("[%d] ", i);
 
 	for (int i = 0; i < N; i++)
 	{
-		printf("\n[%d]", i + 1);
+		printf("\n[%d]", i);
 
 		for (int j = 0; j < N; j++)
 		{
@@ -438,6 +281,7 @@ void zad1_3(int st)
 	}
 	/////
 	int sch2 = 0;
+	int sch_dom = 0;
 	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности ориентированного графа для каждой из вершин");
 	for (int j = 0; j < N; j++)
 	{
@@ -465,12 +309,17 @@ void zad1_3(int st)
 					nodes[r] = nodes[st] + M2[st][r];
 				}
 		}
+
+
+
 		for (int i = 0; i < N; i++)
 		{
+
 			if (nodes[i] != 10000)
 			{
 				printf("%d ", nodes[i]);
-				sch2++;
+
+
 			}
 			else
 			{
@@ -482,9 +331,14 @@ void zad1_3(int st)
 				ex[nach] = nodes[i];
 			}
 		}
-		if (sch2 == N)
+
+		for (int j2 = 0; j2 < N; j2++) // для доминирующей и концевой
+			if (M2[j][j2] != 0 && j != j2)
+				sch2++;
+
+		if (sch2 == N - 1)
 			dom[j] = j;
-		if (sch2 == 2)
+		if (sch2 == 1)
 			kon[j] = j;
 	}
 
@@ -513,7 +367,7 @@ void zad1_3(int st)
 	{
 		if (ex[i] == rad)
 		{
-			printf("%d ", i++);
+			printf("%d ", i);
 			sch1++;
 		}
 	}
@@ -524,7 +378,7 @@ void zad1_3(int st)
 	for (int i = 0; i < N; i++)
 	{
 		if (ex[i] == dia)
-			printf("%d ", i++);
+			printf("%d ", i);
 	}
 	printf("\nИзолированные вершины: \n");
 
@@ -532,7 +386,7 @@ void zad1_3(int st)
 	{
 		if (ex[i] == 0)
 		{
-			printf("%d ", i++);
+			printf("%d ", i);
 			sch1++;
 		}
 	}
@@ -543,7 +397,7 @@ void zad1_3(int st)
 	{
 		if (dom[i] != -1)
 		{
-			printf("%d ", i++);
+			printf("%d ", i);
 		}
 	}
 	printf("\nКонцевые вершины: \n");
@@ -551,38 +405,25 @@ void zad1_3(int st)
 	{
 		if (kon[i] != -1)
 		{
-			printf("%d ", i++);
+			printf("%d ", i);
 		}
 	}
 }
-/// <summary>
-
-/// </summary>
 
 
-void zad1_4(int st)
+void zad1_5(int st)
 {
 	printf("Матрица инцидентности: \n");
 	int r, i = 0;
 	int j = 0;
 	int reb = 0;
-	int sch3 = 0;
-
-	while (sch3 != N)
-	for (int i = 0; i < N;i++)
-	{	
-		for(int j = 0 + sch3; j < N; j++)
-			if (M1[i][j] !=0)
-				reb++;
-		sch3++;
-	}
-	/////
 
 	for (int i = 0; i < N; i++)
-		for (int j = i+1; j < N; j++)
-			if (M1[i][j] != 0)
-				M1[j][i] = 0;
-
+	{
+		for (int j = 0; j < N; j++)					//СЧИТАЕМ КОЛИЧЕСТВО РЕБЕР
+			if (M2[i][j] != 0)
+				reb++;
+	}
 	int** inc;
 
 	inc = (int**)malloc(N * sizeof(int*));
@@ -598,24 +439,34 @@ void zad1_4(int st)
 	for (int i = 0; i < N; i++)				//создание матрицы инцидентности
 	{
 		for (int j = 0; j < N; j++)
-			if (M1[i][j] != 0)
+			if (M2[i][j] != 0)
 			{
-				inc[i][reb] = M1[i][j];				//начало
-				inc[j][reb] = 1;				//конец
+				inc[i][reb] = M2[i][j];				//начало
+				inc[j][reb] = -1;				//конец
 				reb++;
 			}
+	}
+
+	int* ex1;
+	ex1 = (int*)malloc(N * sizeof(int));
+	int* nodes;
+	nodes = (int*)malloc(N * sizeof(int));
+	for (int i = 0; i < sch4; i++)
+	{
+		nodes[i] = -1;
+		ex1[i] = -1;
 	}
 
 
 	printf("\n    ");
 	for (int i = 0; i < sch4; i++)
-		printf("[%d] ", i + 1);
+		printf("[%d] ", i);
 
 	for (int i = 0; i < N; i++)
 	{
-		printf("\n[%d]", i + 1);
+		printf("\n[%d]", i);
 
-		for (int j = 0; j < reb; j++)
+		for (int j = 0; j < sch4; j++)
 		{
 			if ((i + 1) < 10)
 			{
@@ -634,235 +485,64 @@ void zad1_4(int st)
 					printf("   %d", inc[i][j]);
 				else
 					printf("    %d", inc[i][j]);
-
 			}
-
 		}
-
 	}
-
-	int* ex1;
-	ex1 = (int*)malloc(sch4 * sizeof(int));
-	int* nodes1;
-	nodes1 = (int*)malloc(sch4 * sizeof(int));
-	for (int i = 0; i < sch4; i++)
-	{
-		nodes1[i] = -1;
-		ex1[i] = -1;
-	}
-
-
-
 
 	int sch2 = 0;
-	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности неориентированного графа для каждой из вершин");
-	for (int j = 0; j < N; j++)
-	{
-		sch2 = 0;
-		printf("\n ");
-
-		for (int i = 0; i < sch4; i++) // исходно все вершины равны 10000
-			nodes1[i] = 10000;
-
-		st = j;
-		Q.push(st);
-		int nach = st;
-
-		nodes1[st] = 0;
-
-		while (!Q.empty())
-		{
-			st = Q.front();
-			Q.pop();
-			
-			for (r = 0; r < sch4; r++)
-				if(st < N)
-				if ((inc[st][r] != 0) && (nodes1[r] > nodes1[st] + inc[st][r])) // ребро существует и вершина не посещена
-				{
-					Q.push(r);
-					nodes1[r] = nodes1[st] + inc[st][r];
-				}
-		}
-		for (int i = 0; i < sch4; i++)
-		{
-			if (nodes1[i] != 10000)
-			{
-				printf("%d ", nodes1[i]);
-				sch2++;
-			}
-			else
-			{
-				nodes1[i] = 0;
-				printf("0 ");
-			}
-			if (nodes1[i] > ex1[nach])
-			{
-				ex1[nach] = nodes1[i];
-			}
-		}
-	}
-
-	/// ///
-
-	int rad = 10000;
-	int dia = 0;
-	for (int i = 0; i < sch4; i++)
-		if (ex1[i] == 10000)
-			ex1[i] = 0;
-	printf("\nЭксцентриситеты: \n");
-	for (int i = 0; i < N; i++)
-	{
-		printf("%d ", ex1[i]);
-		if (ex1[i] > dia)
-			dia = ex1[i];
-		if ((ex1[i] < rad) && (ex1[i] != 0))
-			rad = ex1[i];
-	}
-	if (rad == 10000)
-		rad = 0;
-	int sch1 = 0;
-	printf("\nРадиус - %d, диаметр - %d\n", rad, dia);
-	printf("Центральные вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (ex1[i] == rad)
-		{
-			printf("%d ", i++);
-			sch1++;
-		}
-	}
-	if (sch1 == 0)
-		printf(" отсутствуют");
-	sch1 = 0;
-	printf("\nПерифирийные вершины: \n");
-	for (int i = 0; i < N; i++)
-	{
-		if (ex1[i] == dia)
-			printf("%d ", i++);
-	}
-}
-
-void zad1_5(int st)
-{
-	printf("Матрица инцидентности: \n");
-	int r, i = 0;
-	int j = 0;
-	int reb = 0;
-	
-		for (int i = 0; i < N; i++)
-		{
-			for (int j = 0; j < N; j++)					//СЧИТАЕМ КОЛИЧЕСТВО РЕБЕР
-				if (M2[i][j] != 0)
-					reb++;
-		}
-		int** inc;
-
-		inc = (int**)malloc(N * sizeof(int*));
-		for (int i = 0; i < N; i++)
-		{
-			inc[i] = (int*)malloc(reb * sizeof(int));
-		}
-		for (int i = 0; i < N; i++)
-			for (int j = 0; j < reb; j++)
-				inc[i][j] = 0;
-		int	sch4 = reb;
-		reb = 0;
-		for (int i = 0; i < N; i++)				//создание матрицы инцидентности
-		{
-			for (int j = 0; j < N; j++)
-				if (M2[i][j] != 0)
-				{
-					inc[i][reb] = 1;				//начало
-					inc[j][reb] = 2;				//конец
-					reb++;
-				}
-		}
-
-		int* ex1;
-		ex1 = (int*)malloc(sch4 * sizeof(int));
-		int* nodes1;
-		nodes1 = (int*)malloc(sch4 * sizeof(int));
-		for (int i = 0; i < sch4; i++)
-		{
-			nodes1[i] = -1;
-			ex1[i] = -1;
-		}
-
-		
-		printf("\n    ");
-		for (int i = 0; i < sch4; i++)
-			printf("[%d] ", i + 1);
-
-		for (int i = 0; i < N; i++)
-		{
-			printf("\n[%d]", i + 1);
-
-			for (int j = 0; j < sch4; j++)
-			{
-				if ((i + 1) < 10)
-				{
-					if (j < 10)
-						printf("%3d ", inc[i][j]);
-					else
-						printf(" %3d ", inc[i][j]);
-
-				}
-
-				else if ((i + 1) < 100)
-				{
-					if (j == 0)
-						printf(" %d", inc[i][j]);
-					else if (j < 10)
-						printf("   %d", inc[i][j]);
-					else
-						printf("    %d", inc[i][j]);
-				}
-			}
-		}
-
-	int sch2 = 0;
+	int g = 0;
 	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности ориентированного графа для каждой из вершин");
 	for (int j = 0; j < N; j++)
 	{
 		sch2 = 0;
 		printf("\n ");
 
-		for (int i = 0; i < sch4; i++) // исходно все вершины равны 10000
-			nodes1[i] = 10000;
+		for (int i = 0; i < N; i++) // исходно все вершины равны 10000
+			nodes[i] = 10000;
 
 		st = j;
 		Q.push(st);
 		int nach = st;
 
-		nodes1[st] = 0;
+		nodes[st] = 0;
 
 		while (!Q.empty())
 		{
 			st = Q.front();
 			Q.pop();
-			if(st < N)
+
 			for (r = 0; r < sch4; r++)
-				if ((inc[st][r] != 0) && (nodes1[r] > nodes1[st] + inc[st][r])) // ребро существует и вершина не посещена
+				if (inc[st][r] > 0) // ребро существует и вершина не посещена
 				{
-					Q.push(r);
-					nodes1[r] = nodes1[st] + inc[st][r];
+					for (g = 0; g < N; g++)
+						if (inc[g][r] == -1)
+						{
+							if (nodes[g] > nodes[st] + inc[st][r])
+							{
+								nodes[g] = nodes[st] + inc[st][r];
+								Q.push(g);
+							}
+							break;
+						}
+
+
 				}
 		}
-		for (int i = 0; i < sch4; i++)
+		for (int i = 0; i < N; i++)
 		{
-			if (nodes1[i] != 10000)
+			if (nodes[i] != 10000)
 			{
-				printf("%d ", nodes1[i]);
+				printf("%d ", nodes[i]);
 				sch2++;
 			}
 			else
 			{
-				nodes1[i] = 0;
+				nodes[i] = 0;
 				printf("0 ");
 			}
-			if (nodes1[i] > ex1[nach])
+			if (nodes[i] > ex1[nach])
 			{
-				ex1[nach] = nodes1[i];
+				ex1[nach] = nodes[i];
 			}
 		}
 	}
@@ -871,7 +551,7 @@ void zad1_5(int st)
 
 	int rad = 10000;
 	int dia = 0;
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 		if (ex1[i] == 10000)
 			ex1[i] = 0;
 	printf("\nЭксцентриситеты: \n");
@@ -892,7 +572,7 @@ void zad1_5(int st)
 	{
 		if (ex1[i] == rad)
 		{
-			printf("%d ", i++);
+			printf("%d ", i);
 			sch1++;
 		}
 	}
@@ -903,6 +583,11 @@ void zad1_5(int st)
 	for (int i = 0; i < N; i++)
 	{
 		if (ex1[i] == dia)
-			printf("%d ", i++);
+			printf("%d ", i);
 	}
 }
+
+
+
+
+
