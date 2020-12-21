@@ -1,5 +1,5 @@
 ﻿  e.cpp
-D:\пгу\Практика\logics\logic7\logic7\e.cpp(32,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-D:\пгу\Практика\logics\logic7\logic7\e.cpp(93,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\пгу\Практика\logics\logic7\logic7\e.cpp(167,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  logic7.vcxproj -> D:\пгу\Практика\logics\logic7\Debug\logic7.exe
+D:\пгу\Практика\logics\logicstiverpo\logic7\logic7\e.cpp(32,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\пгу\Практика\logics\logicstiverpo\logic7\logic7\e.cpp(93,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\logicstiverpo\logic7\logic7\e.cpp(167,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  logic7.vcxproj -> D:\пгу\Практика\logics\logicstiverpo\logic7\Debug\logic7.exe

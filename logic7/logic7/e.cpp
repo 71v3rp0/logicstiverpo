@@ -39,7 +39,7 @@ void main(int argc, char* argv[])
 	if (argc == 1)
 
 	{
-		printf("\n ¬ведите аргументы Lab7.exe <направленность> <вес>\n\n");
+		printf("\n ¬ведите аргументы Lab7.exe <напрвленность> <вес>\n\n");
 		printf(" ѕараметры:\n");
 		printf(" dir - ориентированный граф\n");
 		printf(" weight - взвешанный граф\n");
@@ -323,7 +323,6 @@ void zad1_3(int st)
 			}
 
 		}
-
 	}
 	/////
 
