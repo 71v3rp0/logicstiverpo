@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\пгу\Практика\logics\testlogic\testlogic\test.cpp(133,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\пгу\Практика\logics\testlogic\testlogic\test.cpp(237,6): warning C4101: r: неиспользованная локальная переменная
+  testlogic.vcxproj -> D:\пгу\Практика\logics\testlogic\Debug\testlogic.exe
