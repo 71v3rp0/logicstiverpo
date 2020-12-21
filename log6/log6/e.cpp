@@ -19,6 +19,7 @@ void zad1_3(int st);
 void zad2_1(int st, int N);
 void zad2_2(int st);
 void zad2_3(int start1, int start2, int start3, int start4, int end1, int end2, int end3, int end4, int N);
+void zad2_4(int st);
 #define INFTY INT_MAX
 int** M1, * nodes, * nodes3;
 int N;
@@ -94,7 +95,9 @@ void main() {
 	clock_t end4 = clock();
 
 	zad2_3(start1, start2, start3, start4, end1, end2, end3, end4, N);
-
+	zad2_4(st);
+	for (int i = 0; i < N; i++)
+		printf("%d ", nodes[i]);
 	_getch();
 
 }
@@ -125,7 +128,7 @@ void zad1() {
 		{
 
 			ch = rand() % 10;
-			if (ch < 7)
+			if (ch < 3)
 				M1[i][j] = 0;
 			else
 				M1[i][j] = 1;
@@ -262,4 +265,35 @@ void zad2_3(int start1, int start2, int start3, int start4, int end1, int end2, 
 	printf("\nРезультаты работы <поиск расстояния - обход в ширину списка смежности>: %.2f ms", difftime(end2, start2));
 	printf("\nРезультаты работы <поиск расстояния - обход в глубину матрицы смежности>: %.2f ms", difftime(end3, start3));
 	printf("\nРезультаты работы <поиск расстояния - обход в глубину списка смежности>: %.2f ms", difftime(end4, start4));
+}
+void zad2_4(int st) {
+
+	setlocale(LC_ALL, "russian");
+	std::stack <int> Stack; //начинаем обход графа в глубину, используя стек
+	printf("\n\n 2*. Нерекурсивный обход в глубину матрицы смежности\n ");
+	for (int i = 0; i < N; i++)
+		nodes[i] = -1; 
+	Stack.push(st); // помещаем в очередь введённую вершину
+	nodes[st] = 0;
+	while (!Stack.empty()) // пока стек не пуст
+	{
+		int node = Stack.top(); // извлекаем вершину
+		Stack.pop();
+
+		 // отмечаем ее как посещенную
+
+		for (int j = (N - 1); j >= 0; j--) // проверяем для нее все смежные вершины
+		{
+			if (M1[node][j] == 1 && nodes[j] == -1) // если вершина смежная и не посещённая
+			{
+
+				nodes[j] = nodes[node] + 1;
+
+				Stack.push(j); // добавляем ее в cтек
+			}
+		}
+
+	}
+
+
 }
